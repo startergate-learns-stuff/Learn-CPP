@@ -29,5 +29,11 @@
     <ClCompile Include="PRG.2019.1.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="src1.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="src2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
