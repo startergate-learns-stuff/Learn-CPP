@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="소스 파일\3.5">
+      <UniqueIdentifier>{8b910dbc-3e40-4c48-ad03-cffdc5d8f3d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\3.8">
+      <UniqueIdentifier>{a53f21d1-fc7e-4366-90e7-3cef038a250e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -30,10 +36,31 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="src1.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\3.5</Filter>
     </ClCompile>
     <ClCompile Include="src2.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\3.5</Filter>
+    </ClCompile>
+    <ClCompile Include="src03081.cpp">
+      <Filter>소스 파일\3.8</Filter>
+    </ClCompile>
+    <ClCompile Include="src03082.cpp">
+      <Filter>소스 파일\3.8</Filter>
+    </ClCompile>
+    <ClCompile Include="src03083.cpp">
+      <Filter>소스 파일\3.8</Filter>
+    </ClCompile>
+    <ClCompile Include="src03084.cpp">
+      <Filter>소스 파일\3.8</Filter>
+    </ClCompile>
+    <ClCompile Include="src03085.cpp">
+      <Filter>소스 파일\3.8</Filter>
+    </ClCompile>
+    <ClCompile Include="srd03086.cpp">
+      <Filter>소스 파일\3.8</Filter>
+    </ClCompile>
+    <ClCompile Include="src0308test.cpp">
+      <Filter>소스 파일\3.8</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
