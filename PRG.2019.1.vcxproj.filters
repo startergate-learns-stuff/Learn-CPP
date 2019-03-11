@@ -19,6 +19,12 @@
     <Filter Include="소스 파일\3.8">
       <UniqueIdentifier>{a53f21d1-fc7e-4366-90e7-3cef038a250e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\def">
+      <UniqueIdentifier>{a84d359f-bdbb-4f9d-b717-b6e50aef8c9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\3.11">
+      <UniqueIdentifier>{befce9bc-f449-486d-9b07-24e27c1be376}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -29,12 +35,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="stdafx.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="PRG.2019.1.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="src1.cpp">
       <Filter>소스 파일\3.5</Filter>
     </ClCompile>
@@ -61,6 +61,30 @@
     </ClCompile>
     <ClCompile Include="src0308test.cpp">
       <Filter>소스 파일\3.8</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일\def</Filter>
+    </ClCompile>
+    <ClCompile Include="PRG.2019.1.cpp">
+      <Filter>소스 파일\def</Filter>
+    </ClCompile>
+    <ClCompile Include="src03111.cpp">
+      <Filter>소스 파일\3.11</Filter>
+    </ClCompile>
+    <ClCompile Include="src03112.cpp">
+      <Filter>소스 파일\3.11</Filter>
+    </ClCompile>
+    <ClCompile Include="src03113.cpp">
+      <Filter>소스 파일\3.11</Filter>
+    </ClCompile>
+    <ClCompile Include="src03114.cpp">
+      <Filter>소스 파일\3.11</Filter>
+    </ClCompile>
+    <ClCompile Include="src03115.cpp">
+      <Filter>소스 파일\3.11</Filter>
+    </ClCompile>
+    <ClCompile Include="src03116.cpp">
+      <Filter>소스 파일\3.11</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
