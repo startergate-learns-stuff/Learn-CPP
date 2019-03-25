@@ -37,6 +37,9 @@
     <Filter Include="소스 파일\3.22">
       <UniqueIdentifier>{e3383713-f9bc-4dd4-8497-247cb5004a48}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\3.25">
+      <UniqueIdentifier>{f628f131-93bf-4f8d-84ba-589f15777c82}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -166,6 +169,30 @@
     </ClCompile>
     <ClCompile Include="src03228.cpp">
       <Filter>소스 파일\3.22</Filter>
+    </ClCompile>
+    <ClCompile Include="src0325test1.cpp">
+      <Filter>소스 파일\3.25</Filter>
+    </ClCompile>
+    <ClCompile Include="src0325functest1.cpp">
+      <Filter>소스 파일\3.25</Filter>
+    </ClCompile>
+    <ClCompile Include="src0325functest2.cpp">
+      <Filter>소스 파일\3.25</Filter>
+    </ClCompile>
+    <ClCompile Include="src0325functest3.cpp">
+      <Filter>소스 파일\3.25</Filter>
+    </ClCompile>
+    <ClCompile Include="src0325functest4.cpp">
+      <Filter>소스 파일\3.25</Filter>
+    </ClCompile>
+    <ClCompile Include="src0325functest5.cpp">
+      <Filter>소스 파일\3.25</Filter>
+    </ClCompile>
+    <ClCompile Include="src0325functest6.cpp">
+      <Filter>소스 파일\3.25</Filter>
+    </ClCompile>
+    <ClCompile Include="src0325functest7.cpp">
+      <Filter>소스 파일\3.25</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
