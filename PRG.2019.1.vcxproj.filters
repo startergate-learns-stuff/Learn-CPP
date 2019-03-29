@@ -43,6 +43,9 @@
     <Filter Include="소스 파일\3.26">
       <UniqueIdentifier>{31a92a96-55ee-4922-b155-714c7616e412}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\3.29">
+      <UniqueIdentifier>{67b111bc-1888-4040-ad64-a38d00af9e4f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -205,6 +208,18 @@
     </ClCompile>
     <ClCompile Include="src03263.cpp">
       <Filter>소스 파일\3.26</Filter>
+    </ClCompile>
+    <ClCompile Include="src03291.cpp">
+      <Filter>소스 파일\3.29</Filter>
+    </ClCompile>
+    <ClCompile Include="src03292.cpp">
+      <Filter>소스 파일\3.29</Filter>
+    </ClCompile>
+    <ClCompile Include="src03293.cpp">
+      <Filter>소스 파일\3.29</Filter>
+    </ClCompile>
+    <ClCompile Include="src03294.cpp">
+      <Filter>소스 파일\3.29</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
