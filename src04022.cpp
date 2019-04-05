@@ -5,7 +5,7 @@ using namespace std;
 
 class CMyData {
 public:
-	explicit CMyData(int param) :m_ndata(param) {
+	/*explicit */CMyData(int param) :m_ndata(param) {
 		cout << "CMyData(int)" << endl;
 	}
 
@@ -35,8 +35,8 @@ void TestFunc(const CMyData &param) {
 }
 
 int main() {
-	// TestFunc(5);
+	TestFunc(5);
 
-	TestFunc(CMyData(5));
+	// TestFunc(CMyData(5));
 	return 0;
 }
