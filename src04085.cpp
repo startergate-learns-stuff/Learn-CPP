@@ -13,9 +13,20 @@ public:
 
 	operator int() { return *pndata; }
 
-	void operator=(const CData& rhs) {
+	CData& operator=(const CData& rhs) {
+		if (this == &rhs) return *this;
 		delete pndata;
 		pndata = new int(*rhs.pndata);
+
+		return *this;
+	}
+
+	CData& operator*=(const CData& rhs) {
+		int *pnNewData = new int(*pndata);
+		*pnNewData *= *rhs.pndata;
+		delete pndata;
+		pndata = new int(*pnNewData);
+		return *this;
 	}
 
 private:
@@ -23,9 +34,15 @@ private:
 };
 
 int main() {
-	CData a(0), b(5);
-	a = b;
+	CData a(1), b(5), c(10);
+	// a = b;
+	// cout << a << endl;
+	// a = a;
+	// cout << a << endl;
+	// a = b = c;
+	a *= b *= c;
 	cout << a << endl;
+
 
 	return 0;
 }
