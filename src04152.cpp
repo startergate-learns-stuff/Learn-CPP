@@ -3,6 +3,12 @@
 
 using namespace std;
 
+// 가상함수 virtual == 추상 메소드. 재정의는 함수 이름과 인자가 완전히 똑같아야 한다.
+// 가상함수를 가지고 있는 클래스는 내부적으로 가상함수 테이블이라는 것을 생성 => 가상함수의 메모리 주소 저장
+// 가상함수 호출하면 먼저 가상함수 테이블을 참조해서 메모리 주소를 확인. 가상함수테이블에 주소가 들어가 있다면 그 주소의 함수를 호출
+
+// 소멸자도 가상함수 가능. 부모의 소멸자는 가상함수로 만들어 두자.
+
 class CParent {
 public:
 	CParent() {
@@ -41,6 +47,10 @@ public:
 
 	~CChild() {
 		cout << "~CChild()" << endl;
+	}
+
+	void ChildOutput() {
+		cout << "ChildOutput()" << endl;
 	}
 protected:
 	int m_iD;
@@ -91,6 +101,28 @@ int main() {
 	// child1.Output();
 
 	CParent* pParant = new CChild;
-	delete pParant;
+	// CParent* pParant1 = new CChild1;
+	CParent* pParant2 = new CChildChild;
+
+	CParent* pParentArr[2] = {};
+
+	pParentArr[0] = new CChild;
+	pParentArr[1] = new CChildChild;
+
+	CChild* pChild = (CChild*)pParant;
+	CChild1* pChild1 = (CChild1*)pParant; // 문제 발생 가능 (pParent는 CChild로 할당됨. 애초에 생성한 객체가 아닌 다른 타입이기 떄문)
+
+	// pParent는 CParent 포인터 타입이기 때문에 ChildOutput()에 접근할 수 없다. 접근하고 싶다면 형변환 해야한다.
+	// pParant->ChildOutput()
+	((CChild*)pParant)->ChildOutput();
+
+
+	delete pParant; // CParent 소멸자만 호출. pParent는 CParent 포인터 타입이기 때문에 CChild 소멸자가 호출 X
+	// delete pParant2;
+
+	for (int i = 0; i < 2; i++)
+	{
+		// delete pParentArr[i];
+	}
 	return 0;
 }
