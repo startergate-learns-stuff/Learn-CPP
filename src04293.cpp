@@ -34,11 +34,11 @@ public:
 	return CMyDataEx(static_cast<int>(CMyData::operator+(rhs)));
 	}*/
 
-	/*
+	
 	//인터페이스를 맞춰주기 위한 연산자 다중 정의
 	using CMyData::operator+;
 	using CMyData::operator=;
-	*/
+	
 
 };
 
